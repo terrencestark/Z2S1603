@@ -1,9 +1,8 @@
 #ifndef TSP_H
 #define TSP_H
 
-#include <inttypes.h>
+#include <stdint.h>
 
-using namespace std;
 
 int8_t getFrameString(uint8_t * data, int data_len, char * char_buf[96]);//32*3
 
@@ -34,11 +33,11 @@ public:
 	
   uint8_t msg_type; // 1 for data, 2 for operation [0]
 	// payload
-  uint8_t sub_type;								// [1]
+  uint8_t sub_type;					// [1]
 private:
-  uint8_t data1[4];								// [2][3][4][5]
-  uint8_t data2[4];								// [6][7][8][9]
-  uint8_t data3[4];								// [10][11][12][13]
+  uint8_t data1[4];					// [2][3][4][5]
+  uint8_t data2[4];					// [6][7][8][9]
+  uint8_t data3[4];					// [10][11][12][13]
    
   uint8_t end;
 };
