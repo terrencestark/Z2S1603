@@ -1,0 +1,31 @@
+boolean s_light        = S_OFF;      // subType 11
+const int st_light     = 11;
+boolean s_door         = S_OFF;      // subType 12
+const int st_door      = 12;
+boolean s_relay        = S_OFF;      // subType 13
+const int st_relay     = 13;
+boolean s_security     = S_OFF;      // subType 14
+const int st_security  = 14;
+boolean s_auto_ac      = S_OFF;      // subType 15
+const int st_auto_ac   = 15;
+
+
+const int st_cold   = 1; *
+const int st_hot    = 2; *
+const int st_off    = 3; *
+const int st_adjust = 4; *
+
+int allertHigh = 30;
+int allertLow = 18;
+
+void ctrl_light(new_rcev_df);
+void ctrl_door(new_rcev_df);
+void ctrl_relay(new_rcev_df);
+void ctrl_security(new_rcev_df);
+void ctrl_auto_ac(new_rcev_df);
+void ctrl_ac_cold(new_rcev_df);
+void ctrl_ac_hot(new_rcev_df);
+void ctrl_ac_off(new_rcev_df);
+void ctrl_ac_adjust(new_rcev_df);
+
+// IR signal定义
