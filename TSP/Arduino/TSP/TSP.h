@@ -19,8 +19,8 @@ public:
   // setter
   void setOperationDF(uint8_t _sub_type, uint32_t operation_1, 
 					uint32_t operation_2, uint32_t operation_3);
-  void setDataDF(uint8_t _sub_type, uint32_t operation_1, 
-					uint32_t operation_2, uint32_t operation_3);
+  void setDataDF(uint8_t _sub_type, uint32_t data_1, 
+					uint32_t data_2, uint32_t data_3);
   void setDataByFormatByteStream(uint8_t * byte_stream);// 已经去掉转义的字节流
   void setDataByOriginByteStream(uint8_t * ori_byte_stream, int len);//7e-7e未去掉转义字符，需要长度
   // getter
